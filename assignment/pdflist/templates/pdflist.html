@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<h1 class="text-center title">PDF List</h1>
+<div class="container">
+	<div class="row justify-content-sm-center">
+		{% for pdf in pdflist %}
+		<div class="col-sm-3">
+			<div class="card">
+			  <img src="{% static 'pdf.png' %}" class="card-img-top">
+			  <div class="card-body">
+			    <h5 class="card-title text-center">{{ pdf.name_displayed }}</h5>
+			    <a href="#" class="btn btn-primary fullwidth">Read it now!</a>
+			  </div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+
+{% endblock %}
