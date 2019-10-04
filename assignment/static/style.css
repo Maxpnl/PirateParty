@@ -5,3 +5,8 @@
 .fullwidth {
 	width: 100%;
 }
+.pdfimage{
+	padding: 40px;
+	max-width: 400px;
+	height: auto;
+}

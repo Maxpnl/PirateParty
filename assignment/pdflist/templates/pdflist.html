@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load pdf_file_methods %}
+
 
 {% block main %}
 
@@ -9,10 +11,10 @@
 		{% for pdf in pdflist %}
 		<div class="col-sm-3">
 			<div class="card">
-			  <img src="{% static 'pdf.png' %}" class="card-img-top">
+			  <img src="{% static 'pdf.png' %}" class="card-img-top pdfimage">
 			  <div class="card-body">
 			    <h5 class="card-title text-center">{{ pdf.name_displayed }}</h5>
-			    <a href="#" class="btn btn-primary fullwidth">Read it now!</a>
+			    <a href="{{ pdf | getViewUrl }}" class="btn btn-dark fullwidth" target="_blank" rel="noopener" >Read it now!</a>
 			  </div>
 			</div>
 		</div>

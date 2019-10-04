@@ -21,4 +21,6 @@ from pdflist import views as pdflist
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', pdflist.pdfListView),
+    path('pdf/download/<str:slug>', pdflist.pdfDownload),
+    path('pdf/view/<str:slug>', pdflist.pdfView),
 ]

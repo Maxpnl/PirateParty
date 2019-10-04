@@ -13,5 +13,5 @@ class PdfFileAdmin(admin.ModelAdmin):
 				obj.item_slug = re.sub('[^0-9a-zA-Z]', '-', obj.file_name) # Every non alphanumeric characters will be replaced with "-"
 				super().save_model(request, obj, form, change)
 		except Exception as e:
-			messages.error(request, e) # If anything goes wrong I print the error in the admin panel
+			self.message_user(request, e, level=messages.ERROR) # If anything goes wrong I print the error in the admin panel
 admin.site.register(PdfFile, PdfFileAdmin)
