@@ -4,53 +4,115 @@
 {% block extracss %}
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-<style type="text/css">
-	body{
-		background-color: #D0BCD5b0;
-	}
-</style>
 {% endblock %}
 
 {% block main %}
 
-
-<div class="row contentbox rotate-box" style="background-image: url('{% static 'children.jpg' %}')">
-	<div class="container headertext rotate-back-content main-box">
-		<div class="align-middle align-vertical-center">
-			<h1 class="text-center flash animated white" >Why should schools switch to Linux?</h1>
-			<p class="text-center bounceIn white box-text">
-				In this page we will illustrate why schools should make this switch, even though the educational system is known
-				to be reluctant towards changes, the advantages that a student could achieve by being confindent with a Linux based system
-				are a lot and there is no good reason to keep using other closed source operating systems. 
-			</p>
-		</div>
-	</div>
-	<div class="container headertext rotate-back-content main-box">
-		<div class="align-middle align-vertical-center">
-			<h1 class="text-center flash animated white">Why should schools switch to Linux?</h1>
-			<p class="text-center bounceIn white box-text">
-				In this page we will illustrate why schools should make this switch, even though the educational system is known
-				to be reluctant towards changes, the advantages that a student could achieve by being confindent with a Linux based system
-				are a lot and there is no good reason to keep using other closed source operating systems. 
-			</p>
-		</div>
-	</div>
-	<div class="container headertext rotate-back-content main-box">
-		<div class="align-middle align-vertical-center">
-			<h1 class="text-center flash animated white">Why should schools switch to Linux?</h1>
-			<p class="text-center bounceIn white box-text">
-				In this page we will illustrate why schools should make this switch, even though the educational system is known
-				to be reluctant towards changes, the advantages that a student could achieve by being confindent with a Linux based system
-				are a lot and there is no good reason to keep using other closed source operating systems. 
-			</p>
-		</div>
-	</div>
-
-
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" preserveAspectRatio="none" style="position: absolute;">
-	  <polygon fill="#D0BCD5b0" points="0,120 120,0 120,120"/>
+<div class="row titlerow justify-content-center">
+	<h1 class="text-center header-title animated wobble white">Why should schools switch to Linux?</h1>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="first-svg svg">
+	  <polygon fill="white" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+	  <polygon fill="white" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
 	</svg>
-
 </div>
+
+<br>
+<br>
+
+<div class="row bgwhite">
+	<div class="container justify-content-center">
+		
+		<div class="row">
+			<div class="col-sm-2 justify-content-center">
+				<img src="{% static 'gear.svg' %}" class="box-icon icon-to-animate">
+			</div>
+			<div class="col-sm-8 text-center">
+				<h2 class="text-center">Everyone can see how it works!</h2>
+				<p>
+					Would you ever, as a teacher, let your whole class step into a room you and your colleagues don't know anything about?
+					Then why would you ever let them use a close source operating system? No one knows how it works and what it does with
+					the data you provide them, there could be a pedophile watching you from the webcam as far as the end user knows, your students
+					personal information are important and you shouldn't just give them away to a company so easily!
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg">
+	  <polygon class="svg--sm" fill="#1B9AAA" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+	  <polygon class="svg--lg" fill="#1B9AAA" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+	</svg>
+</div>
+
+<div class="row bgblue">
+	<div class="container justify-content-center">
+		
+		<div class="row">
+			<div class="col-sm-2 justify-content-center">
+				<img src="{% static 'art.svg' %}" class="box-icon icon-to-animate">
+			</div>
+			<div class="col-sm-8 text-center">
+				<h2 class="text-center white">Customize your system appearance!</h2>
+				<p class="white">
+					Every school has it's own name and logo, setting a wallpaper isn't such a big customization, with Linux you can do almost whatever you want as long as you have the skill to do it! More important you can create your own distro and avoid the pain to install back all the
+					tools the students needs whenever you reinstall the system! Your students could even use their own computers and run a live instance of
+					your distro, it will surely save you a lot of time and effort!
+				</p>
+			</div>
+		</div>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg">
+	  <polygon class="svg--sm" fill="#F8FFE5" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+	  <polygon class="svg--lg" fill="#F8FFE5" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+	</svg>
+</div>
+<div class="row bgyellow">
+	<div class="container justify-content-center">
+		
+		<div class="row">
+			<div class="col-sm-2 justify-content-center">
+				<img src="{% static 'administrator.svg' %}" class="box-icon icon-to-animate">
+			</div>
+			<div class="col-sm-8 text-center">
+				<h2 class="text-center ">Give your students more work opportunities!</h2>
+				<p>
+					Most servers in the world use Linux nowadays, knowing how to use it gives your students more career opportunities, expecially if they
+					want to work in the computer science field, this is because almost every system admin uses Linux daily, and having some basic knowledge
+					of it surely helps, as well as simply being familiar with it! 
+				</p>
+			</div>
+		</div>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg">
+	  <polygon class="svg--sm" fill="#FF785A" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+	  <polygon class="svg--lg" fill="#FF785A" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+	</svg>
+</div>
+<div class="row bgmixed">
+	<div class="container justify-content-center">
+		
+		<div class="row">
+			<div class="col-sm-2 justify-content-center">
+				<img src="{% static 'piracy.svg' %}" class="box-icon icon-to-animate">
+			</div>
+			<div class="col-sm-8 text-center">
+				<h2 class="text-center white">You will avoid piracy!</h2>
+				<p class="white">
+					Due to the fact that Linux is free, your students won't have to download an illegal version of it if they want to use it at home
+					without buying it, as this happens with other operating systems that come with a cost, not only you are forcing them to commit a crime
+					if they can't afford a license, you are exposing them to malwares as they are hidden in many pirated software. Using free  and open
+					 source software will keep them out of problems!
+				</p>
+			</div>
+		</div>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg">
+	  <polygon class="svg--sm" fill="white" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+	  <polygon class="svg--lg" fill="white" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+	</svg>
+</div>
+
+
+<script type="text/javascript" src="{% static 'scrollanimations.js' %}"></script>
 
 {% endblock %}
