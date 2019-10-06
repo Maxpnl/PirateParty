@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 from pdflist import views as pdflist
+from linuxinschool import views as linuxinschool
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', pdflist.pdfListView),
     path('pdf/download/<str:slug>', pdflist.pdfDownload),
     path('pdf/view/<str:slug>', pdflist.pdfView),
+    path('linuxinschool', linuxinschool.linuxInSchool)
 ]

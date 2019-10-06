@@ -1,12 +1,59 @@
-.title {
+.title{
 	color: white;
 	background-color: black;
 }
-.fullwidth {
+.fullwidth{
 	width: 100%;
 }
 .pdfimage{
 	padding: 40px;
 	max-width: 400px;
 	height: auto;
+}
+.left-image{
+	max-width: 150px;
+	height: auto;
+	display: inline-block;
+	background-color: #24258294;
+	border-radius: 20%;
+}
+.contentbox{
+	/*padding: 30px;*/
+	font-family: 'Inconsolata', monospace;
+	min-height: 400px;
+	background-position: center; 1
+}
+.headertext{
+	background-color: #515eff3b;
+	border-radius: 3%;
+}
+.align-vertical-center{
+	position: relative;  top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.rotate-box{
+	-webkit-transform: skewY(-5deg);
+	-moz-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);
+	-o-transform: skewY(-5deg);
+	transform: skewY(-5deg);
+}
+.rotate-back-content{
+	-webkit-transform: skewY(5deg);
+	-moz-transform: skewY(5deg);
+	-ms-transform: skewY(5deg);
+	-o-transform: skewY(5deg);
+	transform: skewY(5deg);
+}
+.main-box{
+	margin-bottom: 50px;
+	margin-top: 30px;
+	z-index: 10;
+}
+.box-text{
+	font-size: 20px;
+}
+.white {
+	color: white;
 }

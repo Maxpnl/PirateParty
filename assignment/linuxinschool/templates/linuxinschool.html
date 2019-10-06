@@ -1,12 +1,56 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block extracss %}
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+<style type="text/css">
+	body{
+		background-color: #D0BCD5b0;
+	}
+</style>
 {% endblock %}
 
 {% block main %}
 
-<p>TEST</p>
+
+<div class="row contentbox rotate-box" style="background-image: url('{% static 'children.jpg' %}')">
+	<div class="container headertext rotate-back-content main-box">
+		<div class="align-middle align-vertical-center">
+			<h1 class="text-center flash animated white" >Why should schools switch to Linux?</h1>
+			<p class="text-center bounceIn white box-text">
+				In this page we will illustrate why schools should make this switch, even though the educational system is known
+				to be reluctant towards changes, the advantages that a student could achieve by being confindent with a Linux based system
+				are a lot and there is no good reason to keep using other closed source operating systems. 
+			</p>
+		</div>
+	</div>
+	<div class="container headertext rotate-back-content main-box">
+		<div class="align-middle align-vertical-center">
+			<h1 class="text-center flash animated white">Why should schools switch to Linux?</h1>
+			<p class="text-center bounceIn white box-text">
+				In this page we will illustrate why schools should make this switch, even though the educational system is known
+				to be reluctant towards changes, the advantages that a student could achieve by being confindent with a Linux based system
+				are a lot and there is no good reason to keep using other closed source operating systems. 
+			</p>
+		</div>
+	</div>
+	<div class="container headertext rotate-back-content main-box">
+		<div class="align-middle align-vertical-center">
+			<h1 class="text-center flash animated white">Why should schools switch to Linux?</h1>
+			<p class="text-center bounceIn white box-text">
+				In this page we will illustrate why schools should make this switch, even though the educational system is known
+				to be reluctant towards changes, the advantages that a student could achieve by being confindent with a Linux based system
+				are a lot and there is no good reason to keep using other closed source operating systems. 
+			</p>
+		</div>
+	</div>
+
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" preserveAspectRatio="none" style="position: absolute;">
+	  <polygon fill="#D0BCD5b0" points="0,120 120,0 120,120"/>
+	</svg>
+
+</div>
 
 {% endblock %}
